@@ -8,9 +8,9 @@ main:
     url: /categories/Algorithm/
   - title: "Categories"
     url: /categories/
-  - title: ".etc"
-    url: /categories/.etc/
   - title: "Tags"
     url: /tags/
-  - title: "About"
-    url: /about/
+  - title: ".etc"
+    url: /categories/.etc/
+ # - title: "About"
+ #   url: /about/
