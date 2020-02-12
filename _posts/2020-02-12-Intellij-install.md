@@ -14,7 +14,7 @@ tags :
 
 ####   Intellij Community 버전 설치하는 과정입니다.
 
-spring boot를 시작하기 앞서 Intellij를 설치합니다. :fire:
+spring boot를 시작하기 앞서 Intellij를 설치합니다.:fire:
 
 Intellij Community를 설치하기위해 사이트에 들어갑니다
 
