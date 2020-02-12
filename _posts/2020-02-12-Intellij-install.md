@@ -23,6 +23,7 @@ Intellij Community를 설치하기위해 사이트에 들어갑니다
 [https://www.jetbrains.com/idea/ ](https://www.jetbrains.com/idea/)
 
 ![image-20200212220303731](https://user-images.githubusercontent.com/53978090/74340539-6b3b7980-4de9-11ea-9a98-f9ba18be61ef.png)
+### Comunnity 버전이 무료입니다! 설치 전 다시 확인!
 > Ultimate 와 Community 차이
 
 ![image-20200212220201549](https://user-images.githubusercontent.com/53978090/74340505-5b239a00-4de9-11ea-96e7-a0456dcb7215.png)
