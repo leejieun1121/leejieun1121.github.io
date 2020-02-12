@@ -5,7 +5,7 @@ main:
   - title: "Android"
     url: /categories/Android/
   - title: "Categories"
-    url:/categories/
+    url: /categories/
   - title: "Tags"
     url: /tags/
   - title: "About"
