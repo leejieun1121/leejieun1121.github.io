@@ -4,6 +4,8 @@ main:
     url: https://leejieun1121.github.io
   - title: "Android"
     url: /categories/Android/
+  - title: "Spring"
+    url: /categories/Spring/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
