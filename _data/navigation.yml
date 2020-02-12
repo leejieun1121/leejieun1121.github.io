@@ -4,6 +4,8 @@ main:
     url: /categories/Android/
   - title: "Spring"
     url: /categories/Spring/
+  - title: "Algorithm"
+    url: /categories/Algorithm/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
