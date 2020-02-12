@@ -20,7 +20,7 @@ title                    : "LeeJieun Github Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "LeeJiEun Github Blog"
-description              : "first"
+description              : "start"
 url                      : "https://leejieun1121.github.io"
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
