@@ -21,8 +21,7 @@ Intellij Community를 설치하기위해 사이트에 들어갑니다
 > Intellij 설치하기
 
 [https://www.jetbrains.com/idea/ ](https://www.jetbrains.com/idea/)
-
-![image-20200212220303731](C:\Users\LeeJiEun\AppData\Roaming\Typora\typora-user-images\image-20200212220303731.png)
+![image-20200212220114546](https://user-images.githubusercontent.com/53978090/74340416-34656380-4de9-11ea-8512-1de60362b546.png)
 
 > Ultimate 와 Community 차이
 
