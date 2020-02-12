@@ -2,8 +2,10 @@
 main:
   - title: "블로그 방문하기"
     url: https://leejieun1121.github.io
-  - title: "Categories"
+  - title:"Android"
     url:/categories/Android/
+  - title: "Categories"
+    url:/categories/
   - title:"Tags"
     url:/tags/
   - title: "About"
