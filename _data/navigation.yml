@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "블로그 방문하기"
-    url: https://leejieun1121.github.io
   - title: "Android"
     url: /categories/Android/
   - title: "Spring"
