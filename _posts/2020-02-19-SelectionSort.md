@@ -20,7 +20,7 @@ tags :
 
 ##### => N * (N+1) / 2
 
- ##### 시간복잡도 : O(N^2)
+##### 시간복잡도 : O(N^2)
 
 <pre>
     public class SelectionSort {
