@@ -6,6 +6,8 @@ main:
     url: /categories/Spring/
   - title: "Algorithm"
     url: /categories/Algorithm/
+     - title: "JSP"
+    url: /categories/JSP/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
