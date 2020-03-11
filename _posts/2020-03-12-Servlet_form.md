@@ -54,4 +54,5 @@ tags :
 ##### 위의 웹페이지에 정보를 입력하면, 입력한 값을 잘 받아와서 출력한다!! 그리고 post방식이라 formEx.html 뒤에 지저분하게 붙는 정보가 없이 깔끔하다.:innocent:
 
 ![image-20200311234651622](https://user-images.githubusercontent.com/53978090/76430239-70451600-63f3-11ea-88e8-4ceffbb8f23b.png)
+
 ![image-20200311234552635](https://user-images.githubusercontent.com/53978090/76430197-61f6fa00-63f3-11ea-9ac6-176a6a34e742.png)
