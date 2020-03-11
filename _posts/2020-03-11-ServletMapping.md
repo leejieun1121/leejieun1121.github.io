@@ -24,6 +24,10 @@ tags :
 
 ![image-20200311203119691](https://user-images.githubusercontent.com/53978090/76415414-81cef380-63dc-11ea-80a8-f8878d059ab8.png)
 
+![image-20200311205339563](https://user-images.githubusercontent.com/53978090/76416221-ff473380-63dd-11ea-8839-be08b8024190.png)
+
+![image-20200311205358593](https://user-images.githubusercontent.com/53978090/76416222-00786080-63de-11ea-88ec-23bfadc8ea8b.png)
+
 >  1) web.xml 파일을 이용하기
 
 ##### 먼저 ServletEx에서 어노테이션을 주석처리한 후 
