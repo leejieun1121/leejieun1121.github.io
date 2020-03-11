@@ -34,23 +34,22 @@ tags :
 
 #####  < servlet>으로 맵핑할 < servlet>서블릿을 정해주고 < servlet-mapping>으로 위에 써준 서블릿을  < url-pattern>에 써져있는 이름으로 맵핑하겠다라는 의미 ! 
 
+![image-20200311204407056](https://user-images.githubusercontent.com/53978090/76415480-9dd29500-63dc-11ea-9931-7309e0fc875c.png)
 
+![image-20200311204351355](https://user-images.githubusercontent.com/53978090/76415499-a6c36680-63dc-11ea-9759-d397bff23358.png)
 
 ##### 이렇게 써주고 실행을 하면 404 가나오는데 
 
-![image-20200311204407056](https://user-images.githubusercontent.com/53978090/76415480-9dd29500-63dc-11ea-9931-7309e0fc875c.png)
+![image-20200311204311051](https://user-images.githubusercontent.com/53978090/76415502-aa56ed80-63dc-11ea-83a6-8550fedc22b3.png)
 
 ##### 그 뒤에 아까 url mapping으로 맵핑하겠다 써준 이름인 SE를 붙이면 잘 나온다 ㅎ
 
-![image-20200311204351355](https://user-images.githubusercontent.com/53978090/76415499-a6c36680-63dc-11ea-9759-d397bff23358.png)
+![image-20200311204324364](https://user-images.githubusercontent.com/53978090/76415511-adea7480-63dc-11ea-9290-93fa0ecf243c.png)
 
 > Java Annotation 을 이용하기 
 
 ##### 얘는 더 간단하게 그냥 어노테이션의 이름을 바꿔주면 된다 !!
 
-![image-20200311204311051](https://user-images.githubusercontent.com/53978090/76415502-aa56ed80-63dc-11ea-83a6-8550fedc22b3.png)
-
-![image-20200311204324364](https://user-images.githubusercontent.com/53978090/76415511-adea7480-63dc-11ea-9290-93fa0ecf243c.png)
 
 ![image-20200311204427092](https://user-images.githubusercontent.com/53978090/76415518-b0e56500-63dc-11ea-8387-0640fbafd4ee.png)
 
