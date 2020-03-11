@@ -1,0 +1,45 @@
+---
+title : "Servlet 01"
+excerpt : "Servlet 파일 생성"
+
+categories:
+  - JSP
+tags :
+  - JSP
+  - Servlet
+  - Java
+
+---
+
+> Servlet 프로젝트생성하기
+>
+> ##### Server 폴더에서 또 다른 다이나믹 웹 프로젝트를 생성해주시고 
+
+![image-20200311195604202](https://user-images.githubusercontent.com/53978090/76410846-fb161880-63d3-11ea-9a65-98bb3d47958d.png)
+##### Java Resources -> src 에서 우클릭한뒤 Servlet 을 눌러줍니당
+
+![image-20200311195745112](https://user-images.githubusercontent.com/53978090/76410859-fea99f80-63d3-11ea-9000-991a8fa6d5da.png)
+![image-20200311195844091](https://user-images.githubusercontent.com/53978090/76410867-00736300-63d4-11ea-9d81-41019bf7a52a.png)
+
+
+##### 여기서 !! 밑의 URL mappings: 을 edit 하여 url 주소에 칠때 연결될 이름을 써준다
+
+![image-20200311200052562](https://user-images.githubusercontent.com/53978090/76410873-023d2680-63d4-11ea-8831-89c865f05640.png)
+##### Finish 를 누르면 생성 !
+
+![image-20200311200204554](https://user-images.githubusercontent.com/53978090/76410877-036e5380-63d4-11ea-8bba-e495e33cc114.png)
+##### 아까 url mappings에서 바꿔줬던 애로 맵핑이 되는걸 확인할 수 있다. 
+
+##### 간단히 설명하자면 doGet은 get방식(Read할때 사용) / doPost는 post방식(Create 할때 사용)
+
+![image-20200311200311102](https://user-images.githubusercontent.com/53978090/76410881-049f8080-63d4-11ea-9ed9-2ca8dba10474.png)
+![image-20200311200351733](https://user-images.githubusercontent.com/53978090/76410886-079a7100-63d4-11ea-81ca-528190ce85a4.png)
+
+
+##### 우클릭 후 Run As -> Run on Server 를 누르면 
+
+![image-20200311200547178](https://user-images.githubusercontent.com/53978090/76410894-09fccb00-63d4-11ea-8928-5f7c0864f468.png)
+
+
+##### 잘 실행되는걸 확인할 수 있다 :blush: :blush:
+
