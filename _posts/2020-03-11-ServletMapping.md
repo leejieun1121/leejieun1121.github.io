@@ -28,16 +28,13 @@ tags :
 
 ##### 먼저 ServletEx에서 어노테이션을 주석처리한 후 
 
-![image-20200311203244714](https://user-images.githubusercontent.com/53978090/76415435-898e9800-63dc-11ea-82cc-be88c1a3c972.png)
+![image-20200311205530991](https://user-images.githubusercontent.com/53978090/76415447-901d0f80-63dc-11ea-8380-fd076ae311cb.png)
 
 ##### 밑에 web.xml 에 들어가서 다음 다음 코드를 작성해준다.
 
-#####  <servlet>으로 맵핑할 <servlet>서블릿을 정해주고 <servlet-mapping>으로 위에 써준 서블릿을  <url-pattern>에 써져있는 이름으로 맵핑하겠다라는 의미 ! 
-
-![image-20200311203304881](https://user-images.githubusercontent.com/53978090/76415438-8b585b80-63dc-11ea-9423-8d3de631c21f.png)
+#####  < servlet>으로 맵핑할 < servlet>서블릿을 정해주고 < servlet-mapping>으로 위에 써준 서블릿을  < url-pattern>에 써져있는 이름으로 맵핑하겠다라는 의미 ! 
 
 
-![image-20200311205530991](https://user-images.githubusercontent.com/53978090/76415447-901d0f80-63dc-11ea-8380-fd076ae311cb.png)
 
 ##### 이렇게 써주고 실행을 하면 404 가나오는데 
 
