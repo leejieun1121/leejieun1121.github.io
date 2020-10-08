@@ -501,4 +501,5 @@ https://cloud.google.com/natural-language/docs/basics#interpreting_sentiment_ana
 
 ### 참조
 
+https://github.com/GoogleCloudPlatform/android-docs-samples
 https://mobikul.com/integrating-cloud-natural-language-api-in-android/
