@@ -34,14 +34,14 @@ https://console.cloud.google.com/apis/credentials/serviceaccountkey?hl=ko&_ga=2.
 
 
 
-![image-20201008213403465](https://user-images.githubusercontent.com/53978090/95460314-c1c87a00-09af-11eb-88df-54346f8665a5.png)
+![image-20201008212203515](https://user-images.githubusercontent.com/53978090/95460590-1f5cc680-09b0-11eb-8130-f86bdb452b80.png)
 
 
 새로운 안드로이드 프로젝트를 생성하고 아까 발급받은 json파일을 layout/raw 안에 넣는다.
 
 raw폴더는 새로 만들어주면된다. 
 
-![image-20201008213440123](https://user-images.githubusercontent.com/53978090/95460316-c2f9a700-09af-11eb-8516-c218858bd6e6.png)
+![image-20201008212411436](https://user-images.githubusercontent.com/53978090/95460600-21bf2080-09b0-11eb-91a0-62dead0ef647.png)
 
 
 그리고 build.gradle(Module:app) 파일에 다음 코드를 추가해준다.
@@ -248,8 +248,7 @@ public class AccessTokenLoader extends AsyncTaskLoader<String> {
 </LinearLayout>
 ~~~
 
-![image-20201008213725751](https://user-images.githubusercontent.com/53978090/95460317-c2f9a700-09af-11eb-9b94-9f808738a29c.png)
-
+![image-20201008212857462](https://user-images.githubusercontent.com/53978090/95460604-2388e400-09b0-11eb-8e35-213e5d393d80.png)
 
 **MainActivity.java**
 
@@ -478,22 +477,20 @@ public class MainActivity extends AppCompatActivity {
 
 ~~~
 
-![image-20201008212203515](https://user-images.githubusercontent.com/53978090/95460318-c3923d80-09af-11eb-8151-8a202c719a87.png)
+![image-20201008213317889](https://user-images.githubusercontent.com/53978090/95460612-24ba1100-09b0-11eb-8d72-0f15e302f789.png)
 
 
 **실행 결과**
 
-![image-20201008212411436](https://user-images.githubusercontent.com/53978090/95460320-c3923d80-09af-11eb-87a6-4eb3556b41e1.png)
+![image-20201008213403465](https://user-images.githubusercontent.com/53978090/95460617-25eb3e00-09b0-11eb-94fc-5150e46c4ef7.png)
 
-![image-20201008212857462](https://user-images.githubusercontent.com/53978090/95460322-c42ad400-09af-11eb-93af-dc6edc0780a7.png)
+![image-20201008213440123](https://user-images.githubusercontent.com/53978090/95460628-271c6b00-09b0-11eb-9f72-ead2e8ce7315.png)
 
 
 https://cloud.google.com/natural-language/docs/basics#interpreting_sentiment_analysis_values 
 
  
-
-![image-20201008213317889](https://user-images.githubusercontent.com/53978090/95460324-c42ad400-09af-11eb-8990-ad4a5bb0203a.png)
-
+![image-20201008213725751](https://user-images.githubusercontent.com/53978090/95460633-284d9800-09b0-11eb-9533-bcb452814d32.png)
 
 
 감정 분석 값 해석을 살펴보면 -1.0(부정) ~ 1.0(긍정) 의 범위로 score가 나타나는걸 볼 수 있다. 대체로 점수값이 해당 범위내로 나오는거 같긴하다! 하지만 한글이라 그런지 일기처럼 여러문장으로 사용하면 값이 애매하게 나오는거같기도 함..ㅎ 
