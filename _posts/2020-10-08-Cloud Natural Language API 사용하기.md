@@ -1,6 +1,6 @@
 ---
 title : "Android Cloud Natural Language API 사용해보기 "
-excerpt : "Android"
+excerpt : "Android Cloud Natural Language API"
 
 categories:
   - Android
