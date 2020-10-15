@@ -5,7 +5,7 @@ excerpt : "Android Cloud Natural Language API"
 categories:
   - Android
 tags :
-  - Android
+  - Android 
   - Java
 
 ---
