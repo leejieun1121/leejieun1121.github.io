@@ -1,0 +1,182 @@
+---
+title : "[BOJ 10828] 스택 (java) "
+excerpt : "백준 10828 스택 문제풀이"
+
+categories:
+  - Algorithm
+tags :
+  - Algorithm 
+  - Java
+---
+
+#### :pencil2: 문제 링크 : https://www.acmicpc.net/problem/10828 :pencil2:
+
+##### 1) 배열을 이용한 풀이
+
+~~~
+package basics_200;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class BOJ10828 {
+	//전부 static으로 붙이고 그냥 출력 or 객체로 만들어서 .호출
+	static Integer[] command = new Integer[10000];
+	static Integer top = -1;
+	public static void push(Integer num) {
+		//인덱스 먼저 늘리고 수를 집어넣음 
+		top++;
+		command[top] = num;
+	}
+	
+	public static void pop() {
+		if(top==-1) {
+			System.out.println("-1");
+		}else {
+			//push에서 인덱스 먼저 늘리고 넣었기 때문에 맨 위에 숫자가 있음
+			System.out.println(command[top]);
+			command[top] = 0;
+			top--;
+		}
+	}
+	
+	public static void size() {
+		//초기화를 -1로 했기 때문에 +1 해줘야
+		System.out.println(top+1);
+	}
+	
+	public static void empty() {
+		if(top==-1) {
+			System.out.println(1);
+		}else {
+			System.out.println(0);
+		}
+	}
+	
+	public static void top() {
+		if(top==-1) {
+			System.out.println(-1);
+		}else {
+			System.out.println(command[top]);
+		}
+	}
+	
+	public static void main(String[] args) throws IOException {
+		//BufferedReader :String으로 받음, 예외처리 꼭 해줘야함
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//테스트케이스
+		Integer n = Integer.parseInt(br.readLine());
+		while(n>0) {
+			//명령
+			String s = br.readLine();
+			String[] array = s.split(" ");
+			switch(array[0]) {
+			
+			case "push":
+				push(Integer.parseInt(array[1]));
+				break;
+			
+			case "pop":
+				pop();
+				break;
+				
+			case "size":
+				size();
+				break;
+				
+			case "empty":
+				empty();
+				break;
+
+			case "top":
+				top();
+				break;
+				
+			default:
+			
+			}
+			n--;
+		}		
+	}
+
+}
+
+~~~
+
+
+
+2) 스택을 이용한 풀이
+
+~~~
+package basics_200;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Stack;
+
+public class BOJ10828_2 {
+	public static void main(String[] args) throws  IOException {
+		Stack<Integer> stack = new Stack<Integer>();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//테스트케이스
+		Integer n = Integer.parseInt(br.readLine());
+		while(n>0) {
+			//명령
+			String s = br.readLine();
+			String[] array = s.split(" ");
+			switch(array[0]) {
+			case "push":
+				stack.push(Integer.parseInt(array[1]));
+				break;
+			
+			case "pop":
+				if(stack.isEmpty()) {
+					System.out.println(-1);
+
+				}else {
+					//출력을 하고 pop 
+					System.out.println(stack.pop());
+				}
+			
+				break;
+				
+			case "size":
+				System.out.println(stack.size());
+				break;
+				
+			case "empty":
+				if(stack.isEmpty()) {
+					System.out.println(1);
+
+				}else {
+					System.out.println(0);
+
+				}
+				break;
+
+			case "top":
+				if(stack.isEmpty()) {
+					System.out.println(-1);
+
+				}else {
+					System.out.println(stack.peek());
+
+				}
+				break;
+				
+			default:
+			
+			}
+			n--;
+		}		
+	}
+
+}
+
+~~~
+
+
+
+배열을 이용해서 만들어보는것도 좋지만 웬만하면 만들어져있는거 쓰자 ㅎㅎ 
