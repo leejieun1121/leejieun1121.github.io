@@ -31,7 +31,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
 
 1. 재사용 할 레이아웃을 만든다. 
 
-   **<customview.xml>**
+   ** <customview.xml> **
 
    ~~~
    <?xml version="1.0" encoding="utf-8"?>
@@ -72,7 +72,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
 
 2. values 밑에 CustomView에서 사용할 속성을 추가해준다.
 
-   **<attrs.xml>**
+   ** <attrs.xml> **
 
    ~~~
    <?xml version="1.0" encoding="utf-8"?>
@@ -92,7 +92,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
 
 3. 재사용 할 레이아웃을 커스텀 뷰로 만드는 코드 작성
 
-   **<CustomLoginButtom.kt>**
+   ** <CustomLoginButtom.kt> **
 
    ~~~
    package com.example.customview
@@ -185,7 +185,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
 
 4. 커스텀뷰를 쓰려는 레이아웃에서 만들어둔 CustomLoginButton을 사용하면 된다.
 
-   **<activity_main.xml>**
+   ** <activity_main.xml> **
 
    ~~~
    <?xml version="1.0" encoding="utf-8"?>
@@ -233,7 +233,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
 아쉬운점은 CustomView의 속성들을 바로바로 찾아주지 않아 일일이 쳐야하는 점이 귀찮다 ㅠ 
 
 ---
-**참고**
+** 참고 **
 
 https://gun0912.tistory.com/38
 
