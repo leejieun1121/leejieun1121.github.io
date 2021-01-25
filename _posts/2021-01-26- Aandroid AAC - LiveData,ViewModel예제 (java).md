@@ -63,7 +63,7 @@ Ex) 애뮬레이터 회전시, 컨트롤러에 저장된 모든 일시적인 UI�
 
 
 
-** <Activity.java> **
+<Activity.java>
 
 ~~~
 /*
@@ -133,7 +133,7 @@ public class ChronoActivity3 extends AppCompatActivity {
 
 
 
-** <ViewModel> **
+<ViewModel>
 
 ~~~
 /*
@@ -271,7 +271,7 @@ ViewModel에 관찰할 LiveData를 쓰고 setValue()나 postValue()로 값을 �
 
 액티비티 하나에 Fragment 2개를 놓고 ViewModel 을 통해 같은 상태바의 값을 가지는 예제이다.
 
-** <레이아웃> **
+<.xml>
 
 ~~~
 <?xml version="1.0" encoding="utf-8"?><!--
@@ -321,7 +321,7 @@ ViewModel에 관찰할 LiveData를 쓰고 setValue()나 postValue()로 값을 �
 
 
 
-** <Activity.java> **
+<Activity.java>
 
 ~~~
 /*
@@ -424,7 +424,7 @@ public class Fragment_step5 extends Fragment {
 
 
 
-** <ViewModel> **
+<ViewModel>
 
 ~~~
 /*
