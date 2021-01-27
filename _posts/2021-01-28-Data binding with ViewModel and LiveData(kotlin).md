@@ -15,7 +15,7 @@ tags :
 
 현재 앱의 아키텍쳐 
 
-![스크린샷 2021-01-28 오전 12.04.31](/Users/jieun/Library/Application Support/typora-user-images/스크린샷 2021-01-28 오전 12.04.31.png)
+![스크린샷 2021-01-28 오전 12 04 31](https://user-images.githubusercontent.com/53978090/106027521-4f220c80-610e-11eb-9c1c-1b0016c390d7.png)
 
 ex) GameFragment의 Finish버튼은 game_fragment.xml에 정의되어 있다.
 
@@ -27,7 +27,7 @@ Finish버튼을 클릭하면 setOnClickListener에 의해서 , ViewModel에 있�
 
 = viewModel객체는 UI데이터를 보유함 !
 
-![스크린샷 2021-01-28 오전 12.09.00](/Users/jieun/Library/Application Support/typora-user-images/스크린샷 2021-01-28 오전 12.09.00.png)
+![스크린샷 2021-01-28 오전 12 09 00](https://user-images.githubusercontent.com/53978090/106027539-53e6c080-610e-11eb-806c-05f3ace43716.png)
 
 
 
