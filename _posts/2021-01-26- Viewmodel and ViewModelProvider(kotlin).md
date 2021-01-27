@@ -16,7 +16,7 @@ tags :
 
 
 
-<GameFragment.kt>
+**GameFragment.kt**
 
 ~~~
 /*
@@ -117,7 +117,7 @@ class GameFragment : Fragment() {
 
 
 
-<GameViewModel.kt>
+**GameViewModel.kt**
 
 ~~~
 package com.example.android.guesstheword.screens.game
@@ -211,7 +211,7 @@ class GameViewModel : ViewModel() {
 
 
 
-<ScoreFragme.kt>
+**ScoreFragme.kt**
 
 ~~~
 /*
@@ -286,7 +286,7 @@ finish 버튼을 누르면 ScoreFragment 로 넘어가서 score를 띄워줘야�
 
 ScoreFragment는 따로 ScoreViewModel을 만들어주어야하고, finish버튼에서 ScoreFragment로 넘겨준 score를 ScoreViewModel에서 사용하려면 따로 ViewModelFactory를 만들어주어야 한다는 아주 중요한 사실을 깨달았다😂
 
-<ScoreViewModelFactory.kt>
+**ScoreViewModelFactory.kt**
 
 ~~~
 package com.example.android.guesstheword.screens.score
@@ -317,7 +317,7 @@ class ScoreViewModelFactory(private val finalScore: Int): ViewModelProvider.Fact
 
 
 
-<ScoreViewModel.kt>
+**ScoreViewModel.kt**
 
 ~~~
 package com.example.android.guesstheword.screens.score
