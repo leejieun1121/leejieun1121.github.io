@@ -66,7 +66,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
    
    
    </LinearLayout>
-   '''
+   
 
 
 
@@ -84,7 +84,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
            <attr name="textColor" format="reference|integer" />
        </declare-styleable>
    </resources>재사용 할 레이아웃을 만든다. 
-   '''
+   
 
    여기서 쓰이는 name = "LoginButton"이 3.에서 쓰이는 styleable 의 이름이 된다.
 
@@ -179,7 +179,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
        }
    }
    
-   '''
+  
 
 
 
@@ -224,7 +224,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
            />
    
    </LinearLayout>
-   '''
+   
 
 
 
