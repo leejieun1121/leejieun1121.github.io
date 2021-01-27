@@ -51,7 +51,7 @@ View에서 binding.viewModel = viewModel 해줘야 함
 
 ---
 
-<game_fragment.xml>
+< game_fragment.xml >
 
 ~~~
 <?xml version="1.0" encoding="utf-8"?><!--
@@ -206,7 +206,7 @@ View에서 binding.viewModel = viewModel 해줘야 함
 
 
 
-<GameFragment.kt>
+< GameFragment.kt >
 
 ~~~
 /*
@@ -293,7 +293,7 @@ class GameFragment : Fragment() {
 
 
 
-<score_fragment.xml>
+< score_fragment.xml >
 
 ~~~
 <?xml version="1.0" encoding="utf-8"?><!--
@@ -382,7 +382,7 @@ class GameFragment : Fragment() {
 
 
 
-<ScoreFragment.kt>
+< ScoreFragment.kt >
 
 ~~~
 /*
