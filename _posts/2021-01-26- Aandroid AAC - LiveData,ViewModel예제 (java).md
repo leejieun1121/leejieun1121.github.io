@@ -128,7 +128,6 @@ public class ChronoActivity3 extends AppCompatActivity {
         mLiveDataTimerViewModel.getElapsedTime().observe(this,elapsedTimeObserver);
     }
 }
-
 ~~~
 
 
@@ -204,8 +203,8 @@ public class LiveDataTimerViewModel extends ViewModel {
         timer.cancel();
     }
 }
-
 ~~~
+
 
 <img width="346" alt="스크린샷 2021-01-26 오전 1 52 47" src="https://user-images.githubusercontent.com/53978090/105740123-371a8380-5f7c-11eb-8ef9-37f685c582a4.png">
 
