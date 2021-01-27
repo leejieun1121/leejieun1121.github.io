@@ -33,7 +33,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
 
    < customview.xml >
 
-   '''
+   ~~~
    <?xml version="1.0" encoding="utf-8"?>
    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
        android:id="@+id/layout"
@@ -66,7 +66,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
    
    
    </LinearLayout>
-   
+   ~~~
 
 
 
@@ -74,7 +74,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
 
    < attrs.xml >
 
-   '''
+   ~~~
    <?xml version="1.0" encoding="utf-8"?>
    <resources>
        <declare-styleable name="LoginButton">
@@ -84,7 +84,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
            <attr name="textColor" format="reference|integer" />
        </declare-styleable>
    </resources>재사용 할 레이아웃을 만든다. 
-   
+   ~~~
 
    여기서 쓰이는 name = "LoginButton"이 3.에서 쓰이는 styleable 의 이름이 된다.
 
@@ -94,7 +94,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
 
    < CustomLoginButtom.kt >
 
-   '''
+   ~~~
    package com.example.customview
    
    import android.content.Context
@@ -178,7 +178,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
            typedArray.recycle()
        }
    }
-   
+   ~~~
   
 
 
@@ -187,7 +187,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
 
    < activity_main.xml >
 
-   '''
+   ~~~
    <?xml version="1.0" encoding="utf-8"?>
    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
        xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -224,8 +224,8 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
            />
    
    </LinearLayout>
+   ~~~
    
-
 
 
 이렇게 아까 attrs.xml 에 썼던 속성들을 이용해서 Custom 시킬 수 있다. 
