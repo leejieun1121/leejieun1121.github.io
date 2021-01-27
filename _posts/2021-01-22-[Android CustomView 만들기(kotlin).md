@@ -31,9 +31,9 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
 
 1. 재사용 할 레이아웃을 만든다. 
 
-   <customview.xml>
+   < customview.xml >
 
-   ~~~
+   '''
    <?xml version="1.0" encoding="utf-8"?>
    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
        android:id="@+id/layout"
@@ -66,15 +66,15 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
    
    
    </LinearLayout>
-   ~~~
+   '''
 
 
 
 2. values 밑에 CustomView에서 사용할 속성을 추가해준다.
 
-   <attrs.xml>
+   < attrs.xml >
 
-   ~~~
+   '''
    <?xml version="1.0" encoding="utf-8"?>
    <resources>
        <declare-styleable name="LoginButton">
@@ -84,7 +84,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
            <attr name="textColor" format="reference|integer" />
        </declare-styleable>
    </resources>재사용 할 레이아웃을 만든다. 
-   ~~~
+   '''
 
    여기서 쓰이는 name = "LoginButton"이 3.에서 쓰이는 styleable 의 이름이 된다.
 
@@ -92,9 +92,9 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
 
 3. 재사용 할 레이아웃을 커스텀 뷰로 만드는 코드 작성
 
-   <CustomLoginButtom.kt>
+   < CustomLoginButtom.kt >
 
-   ~~~
+   '''
    package com.example.customview
    
    import android.content.Context
@@ -179,15 +179,15 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
        }
    }
    
-   ~~~
+   '''
 
 
 
 4. 커스텀뷰를 쓰려는 레이아웃에서 만들어둔 CustomLoginButton을 사용하면 된다.
 
-   <activity_main.xml>
+   < activity_main.xml >
 
-   ~~~
+   '''
    <?xml version="1.0" encoding="utf-8"?>
    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
        xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -224,7 +224,7 @@ color 값 찾기 귀찮아서 원래 있는거 썼더니 조합이 너무 별로
            />
    
    </LinearLayout>
-   ~~~
+   '''
 
 
 
