@@ -337,8 +337,8 @@ class ScoreViewModel(finalScore :Int) : ViewModel() {
 
 **참고**
 
-viewmodel : https://developer.android.com/codelabs/kotlin-android-training-view-model#0
+viewmodel : <https://developer.android.com/codelabs/kotlin-android-training-view-model#0>
 
-data-binding : https://developer.android.com/codelabs/kotlin-android-training-data-binding-basics?index=..%2F..android-kotlin-fundamentals#0
+data-binding : <https://developer.android.com/codelabs/kotlin-android-training-data-binding-basics?index=..%2F..android-kotlin-fundamentals#0>
 
-Navigation : https://developer.android.com/codelabs/kotlin-android-training-create-and-add-fragment?index=..%2F..android-kotlin-fundamentals#0
+Navigation : <https://developer.android.com/codelabs/kotlin-android-training-create-and-add-fragment?index=..%2F..android-kotlin-fundamentals#0>
