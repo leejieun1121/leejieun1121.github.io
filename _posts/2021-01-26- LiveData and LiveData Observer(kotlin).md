@@ -320,6 +320,6 @@ class ScoreViewModel(finalScore :Int) : ViewModel() {
 ---
 **참고**
 
-<https://developer.android.com/codelabs/kotlin-android-training-live-data#0 >
+<https://developer.android.com/codelabs/kotlin-android-training-live-data#0> 
 
 <https://developer.android.com/topic/libraries/architecture/livedata>
