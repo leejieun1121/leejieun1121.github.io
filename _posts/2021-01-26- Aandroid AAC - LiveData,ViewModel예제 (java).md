@@ -464,8 +464,8 @@ public class SeekBarViewModel extends ViewModel {
 
 **참고**
 
-https://developer.android.com/codelabs/android-lifecycles#0
+<https://developer.android.com/codelabs/android-lifecycles#0>
 
-https://developer.android.com/reference/android/arch/lifecycle/LiveData.html
+<https://developer.android.com/reference/android/arch/lifecycle/LiveData.html>
 
-https://developer.android.com/topic/libraries/architecture/viewmodel.html
+<https://developer.android.com/topic/libraries/architecture/viewmodel.html>
