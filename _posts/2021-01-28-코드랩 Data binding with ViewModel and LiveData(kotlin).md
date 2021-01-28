@@ -1,5 +1,5 @@
 ---
-title : "Data binding with ViewModel and LiveData(kotlin) "
+title : "코드랩 Data binding with ViewModel and LiveData(kotlin) "
 excerpt : "코드랩 따라하면서 공부하기~"
 
 categories:
