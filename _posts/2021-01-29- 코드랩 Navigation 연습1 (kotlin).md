@@ -233,7 +233,9 @@ override fun onSupportNavigateUp(): Boolean {
 }
 ~~~
 ![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/53978090/106260133-6a526080-6263-11eb-8ea1-44e457774087.gif)
+
 ---
+
 **참고**
 코드랩 :<https://developer.android.com/codelabs/kotlin-android-training-add-navigation/index.html#0>
 
