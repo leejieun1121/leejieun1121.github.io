@@ -120,6 +120,7 @@ private fun shareSuccess() {
 	
 ---
 **정리**
+
 단순히 navigation 화면 넘어간다
 ~~~
 findNavController().navigate(R.id.action_gameWonFragment_to_gameFragment)
