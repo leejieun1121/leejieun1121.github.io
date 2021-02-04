@@ -83,15 +83,19 @@ tags :
 
 Adapter는 반복해서 보여줘야하는 아이템 리스트1개와 3개의 메소드를 override해줘야한다.
 1) onCreateViewHolder
+
 아까 만들어둔 item_layout 을 inflater 로 inflate해서 ViewHolder로 넘겨준다.
 
 2) onBindViewHolder
+
 리스트[position]으로 item 한개씩 holder의 bind함수로 넘겨준다. 
 
 3) getItemCount
+
 리스트의 사이즈를 return 해준다.
 
 **ViewHolder**
+
 Adapter안에 써줘도 되고, 따로 밖에 빼도 된다. 하지만 안에 써주는게 접근할때 더 편한것 같다.
 
 onCreateViewHolder에서 넘겨받은 레이아웃을 View로 받아
