@@ -107,15 +107,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "LeeJiEun"
+  name             : "이지은"
   avatar           : "/Users/jieun/Downloads/IMG_0573.jpg"
   bio              : "개인 공부 블로그입니다.:relaxed::fire:"
   location         : "Republic of Korea"
-  email            :
+  email            : "lje4648@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "lje4648@naver.com"
+      url: mailto:lje4648@naver.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -127,7 +127,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-        url: "https://github.com/leejieun1121"
+      url: "https://github.com/leejieun1121"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
