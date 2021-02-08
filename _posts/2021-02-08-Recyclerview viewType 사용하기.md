@@ -11,11 +11,12 @@ tags :
 
 
 예전에 솝트하면서 전체게시판을 구현할때,  viewType 쓰는 방법을 처음 배웠다. 
+
 오랜만에 다시해보고 정리하기  :punch:
 
 ![스크린샷 2021-02-08 오후 10 12 42](https://user-images.githubusercontent.com/53978090/107224448-c8005d00-6a5a-11eb-9517-0a0283848f8c.png)
 
-**1. viewType에 따라 보여질 레이아웃 만들기**
+**1.viewType에 따라 보여질 레이아웃 만들기**
 
 위에 보이는 레이아웃은 
 1) 가운데 TextView 하나 있는 레이아웃
@@ -83,6 +84,7 @@ tags :
 ~~~
 
 **item_right.xml**
+
 ~~~
 <?xml version="1.0" encoding="utf-8"?>  
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"  
@@ -120,7 +122,7 @@ tags :
 </androidx.constraintlayout.widget.ConstraintLayout>
 ~~~
 
-**2.레이아웃에 넣을 data 만들기 **
+**2.레이아웃에 넣을 data 만들기**
 겉으로 나타나는 사진, 이름 , 내용 그리고 구분하기 위해 필요한 viewType 을 넣어 data를 만들어준다.
 
 **DataItem**
@@ -146,7 +148,7 @@ class DataItem {
 }
 ~~~
 
-**3. Adapter와 ViewHolder만들기**
+**3.Adapter와 ViewHolder만들기**
 
 리싸이클러뷰를 나타내기 위해서는 Adapter와 ViewHolder가 필요한건 동일하지만 각각 다른 레이아웃을 나타내려면, viewType을 사용해야한다.
 ~~~
@@ -191,7 +193,8 @@ override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.
  } }}
 ~~~
 
-그다음 onBindViewHolder에서 holder의 종류에 따라 bind를 해준다. 
+그다음 onBindViewHolder에서 holder의 종류에 따라 bind를 해준다.
+
 여기서 set을 해줘도 되지만, 나는 viewHolder에 bind함수를 만들어 set해줬다. 
 
 ~~~
@@ -206,7 +209,9 @@ override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
   
  } }}
 ~~~
-그다음 각 ViewHolder에서 findViewById를 사용해서 set할 아이템들을 찾아주고, adapter 에서 호출했던 bind 함수안에서 데이터를 set해주면 된다. 
+
+그다음 각 ViewHolder에서 findViewById를 사용해서 set할 아이템들을 찾아주고, adapter 에서 호출했던 bind 함수안에서 데이터를 set해주면 된다.
+
 ~~~
 class CenterViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {  
   val content: TextView = itemView.findViewById(R.id.content)  
@@ -335,11 +340,12 @@ class RightViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
  }}
 ~~~
 
-**4. 리싸이클러뷰 adapter설정 및 데이터 넣기 **
+**4. 리싸이클러뷰 adapter설정 및 데이터 넣기**
 
 리싸이클러뷰가 포함된 레이아웃을 만들어준다.
 
 **activity_main.xml**
+
 ~~~
 <?xml version="1.0" encoding="utf-8"?>  
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"  
@@ -359,6 +365,7 @@ class RightViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
 만들어둔 리싸이클러뷰에 레이아웃 메니저와 어댑터를 설정해주고, 데이터들을 추가시키면 끝 !
 
 **MainActivity.kt**
+
 ~~~
 package com.example.multipleviewtypetest  
   
