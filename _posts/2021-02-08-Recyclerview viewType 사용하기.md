@@ -408,6 +408,6 @@ class MainActivity : AppCompatActivity() {
 ---
 **참고**
 
-https://lktprogrammer.tistory.com/190
+<https://lktprogrammer.tistory.com/190>
 
-https://www.freepik.com/free-photo/french-bulldog-dog-breeds-white-polka-dot-black-marble_10069489.htm#position=17
+<https://www.freepik.com/free-photo/french-bulldog-dog-breeds-white-polka-dot-black-marble_10069489.htm#position=17>
