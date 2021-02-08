@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "이지은"
-  avatar           : "/Users/jieun/Downloads/IMG_0573.jpg"
+  avatar           : "/assets/IMG_0573.jpg"
   bio              : "개인 공부 블로그입니다.:relaxed::fire:"
   location         : "Republic of Korea"
   email            : "lje4648@naver.com"
