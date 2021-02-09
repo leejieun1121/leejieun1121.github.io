@@ -115,10 +115,7 @@ fun bind(item: SleepNight) {
 
 저번에 Transformation을 사용해서 바인딩하는 데이터를 바꿔줬었는데, 이번엔 바인딩 어댑터를 사용한다. 바꿀 내용이 간단할때는 Transformations을, 보다 복잡한 내용은 바인딩 어댑터를 사용하는것이 좋다.  :thumbsup: 
 
-바인딩 어댑터를 선언할 BindingUtils.kt를 만들어주고 그 안에 함수를 만들어주면 된다.
-
-그리고 viewHolder에서 TextView나 ImageView의 값을 설정해줄때 썼던 내용 그대로 써주면 끝 ㅎㅎ
-
+바인딩 어댑터를 선언할 BindingUtils.kt를 만들어주고 그 안에 viewHolder에서 TextView나 ImageView의 값을 설정해줄때 썼던 내용 그대로 써주면 된다. ㅎㅎ
 
 **BindingUtils.kt**
 ~~~
