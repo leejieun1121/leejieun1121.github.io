@@ -101,6 +101,16 @@ class ViewHolder private constructor(val binding: ItemSleepTrackerBinding) : Rec
 
 그리고 데이터바인딩을 사용했기 때문에ViewHolder에서 view.findViewById로 찾아줬던 변수들을 삭제해줘도 된다. 
 
+마지막으로 선언해줬던 변수들을 삭제해준 뒤, bind 함수 안에 xml에서 바인딩 변수로 사용한 sleep 에다가 item을 할당해주는 코드를 써준다.
+
+~~~
+fun bind(item: SleepNight) {  
+  binding.sleep = item  
+  binding.executePendingBindings()  
+}
+~~~
+
+
 **4. 바인딩 어댑터 사용하기**
 
 저번에 Transformation을 사용해서 바인딩하는 데이터를 바꿔줬었는데, 이번엔 바인딩 어댑터를 사용한다. 바꿀 내용이 간단할때는 Transformations을, 보다 복잡한 내용은 바인딩 어댑터를 사용하는것이 좋다.  :thumbsup: 
@@ -201,7 +211,7 @@ import com.example.android.trackmysleepquality.database.SleepNight
 </layout>
 ~~~
 
-마지막으로 Fragment에서 adapter.submitList()를 사용한 코드로 바꿔주면 끝 
+Fragment에서 adapter.submitList()를 사용한 코드로 바꿔주면 끝 ! 
 
 **SleepTrackerFragment.kt**
 
