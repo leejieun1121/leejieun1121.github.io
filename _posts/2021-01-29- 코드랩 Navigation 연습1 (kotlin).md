@@ -199,6 +199,22 @@ id와 title을 추가해준다.
 **Drawer Layout 추가하기**
 옵션 메뉴만들때 처럼 menu를 추가하고
 activity_main.xml에 DrawerLayout으로 전체를 감싸고 NavigationView의 menu에 만들어둔 menu를 넣는다.  
+
+< navdrawer_menu.xml >
+~~~
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragment_about"
+        android:title="@string/about" />
+    <item
+        android:id="@+id/fragment_rules"
+        android:title="@string/rules" />
+</menu>
+~~~
+
 < activity_main.xml >
 ~~~
 <layout xmlns:android="http://schemas.android.com/apk/res/android"  
