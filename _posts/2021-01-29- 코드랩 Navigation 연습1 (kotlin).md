@@ -146,6 +146,18 @@ id와 title을 추가해준다.
 옵션 메뉴를 보이게 할 fragment에
 다음과 같은 코드를 작성한다. 
 
+ < options_menu.xml >
+ ~~~
+ <?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragment_about"
+        android:title="@string/about" />
+</menu>
+ ~~~
+
  < TitleFragment.kt >
   ~~~
  class TitleFragment : Fragment() {  
