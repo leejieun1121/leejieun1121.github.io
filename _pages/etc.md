@@ -6,4 +6,4 @@ author_profile: true
 taxonomy: .etc
 ---
 
-설치 및 오류 포스팅!
+후기 포스팅
