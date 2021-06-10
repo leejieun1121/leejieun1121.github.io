@@ -93,15 +93,15 @@ ex) 이미지를 서버에 업로드, 데이터 분석하고 데이터베이스�
 
 1. Worker 클래스 생성
 
-    ```kotlin
-    class SimpleWorker : Worker() {
-      override fun doWork(): WorkerResult {
-        // 처리해야할 작업 명시 
-    		//return은 SUCCESS, FAILURE, RETRY가 있다. 
-        return WorkerResult.SUCCESS
-      }
-    }
-    ```
+```kotlin
+class SimpleWorker : Worker() {
+  override fun doWork(): WorkerResult {
+  // 처리해야할 작업 명시 
+  //return은 SUCCESS, FAILURE, RETRY가 있다. 
+    return WorkerResult.SUCCESS
+  }
+}
+```
 
     Worker 클래스를 상속받아야함, 한개의 doWork 추상메소드가 존재
 
