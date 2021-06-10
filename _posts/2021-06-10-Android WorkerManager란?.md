@@ -103,7 +103,7 @@ class SimpleWorker : Worker() {
 }
 ```
 
-    Worker 클래스를 상속받아야함, 한개의 doWork 추상메소드가 존재
+Worker 클래스를 상속받아야함, 한개의 doWork 추상메소드가 존재
 
 2-1. SimpleWorker의 작업을 한번만 수행하는 코드 작성
 
