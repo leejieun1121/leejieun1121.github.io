@@ -38,7 +38,7 @@ tags :
 
 > 안드로이드 백그라운드 작업 처리 방법
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b2cff420-0f6c-4bc5-80b5-e1a75e90cda9/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b2cff420-0f6c-4bc5-80b5-e1a75e90cda9/Untitled.png)
+![image](https://user-images.githubusercontent.com/53978090/121470800-aa87d380-c9f9-11eb-9066-63210ba7dabb.png)
 
 안드로이드에서 백그라운드 작업 처리 방법은 위와 같이 여러가지가 있다. 어떤 방법을 사용할지는..백그라운드 작업을 어느 상황에 처리해야할지, 상황에 따라 알맞는 방법을 사용하면 된다. 
 
@@ -54,7 +54,7 @@ tags :
 - Firebase JobDispatcher(상황에 따라 AlarmManager와 JobScheduler를 자동으로 선택, 하지만 구글 플레이 서비스에 제한적임)
 - 2018년에 등장한것이 WorkManager
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0c984b0c-fb43-401f-899a-de5c906ce665/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0c984b0c-fb43-401f-899a-de5c906ce665/Untitled.png)
+![image](https://user-images.githubusercontent.com/53978090/121470827-b4113b80-c9f9-11eb-8edc-fd66335ddc30.png)
 
 > WorkManager의 특징
 
@@ -66,7 +66,7 @@ tags :
 
 > WorkManager의 구조
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9611eb83-c730-443f-8cc1-92de3dbee7cb/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9611eb83-c730-443f-8cc1-92de3dbee7cb/Untitled.png)
+![image](https://user-images.githubusercontent.com/53978090/121470847-ba9fb300-c9f9-11eb-9ff3-e48eebad0bca.png)
 
 > 언제 사용하는것이 좋은가?
 
