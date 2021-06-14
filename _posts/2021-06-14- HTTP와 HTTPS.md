@@ -10,7 +10,7 @@ tags :
 
 
 
-[얄팍한 코딩사전님의 HTTPS강의]([https://www.youtube.com/watch?v=H6lpFRpyl14](https://www.youtube.com/watch?v=H6lpFRpyl14))를 참고하여 정리했습니당 
+[얄팍한 코딩사전님의 HTTPS강의](https://www.youtube.com/watch?v=H6lpFRpyl14)를 참고하여 정리했습니당 
 
 ### HTTP(Hyper Text Transfer Protocol)
 
