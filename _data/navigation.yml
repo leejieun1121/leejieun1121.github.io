@@ -2,6 +2,8 @@
 main:
   - title: "Android"
     url: /categories/Android/
+  - title: "CS"
+    url: /categories/CS/
   - title: "JSP"
     url: /categories/JSP/
   - title: "Spring"
