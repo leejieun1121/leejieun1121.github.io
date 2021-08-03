@@ -33,7 +33,7 @@ fun main() {
 }
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/29348f80-6e78-4eb1-bd03-6d4db8949e31/스크린샷_2021-08-03_23.56.57.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/29348f80-6e78-4eb1-bd03-6d4db8949e31/스크린샷_2021-08-03_23.56.57.png)
+![image](https://user-images.githubusercontent.com/53978090/128049319-6609adde-fdef-4636-a404-abff8fb4e77a.png)
 
 GlobalScope라는 코루틴을 만들어서 블록 내부를 메인 스레드와 동시에 실행 
 
@@ -52,7 +52,7 @@ fun main() {
 }
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f46492d9-02b3-4312-9a4f-085126f72b0b/스크린샷_2021-08-03_23.56.40.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f46492d9-02b3-4312-9a4f-085126f72b0b/스크린샷_2021-08-03_23.56.40.png)
+![image](https://user-images.githubusercontent.com/53978090/128049347-6068515d-8392-415e-91ea-0abb00aeca04.png)
 
 마찬가지로 메인 스레드와 코루틴이 동시에 실행된다. 하지만 메인스레드를 2초 멈춰놓았기 때문에 3초를 대기해야하는 코루틴을 기다리지 않고 끝나버려서 World 가 출력되지 않는다. 
 
@@ -77,7 +77,7 @@ Thread.sleep과 동일한 기능을 하는것이 runBlocking이라는 코루틴 
 
 delay → suspend 코루틴 안에서만 수행해야함 (main이 중단되면 안되기때문에 밖에서 사용할 수 없음 , 명시적인 코루틴 블록을 써줘야함 ! ⇒ 너 멈춰! runBlocking { } )
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/047e8528-9184-4ece-a3bb-90ff6ca735cb/스크린샷_2021-08-04_00.00.40.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/047e8528-9184-4ece-a3bb-90ff6ca735cb/스크린샷_2021-08-04_00.00.40.png)
+![image](https://user-images.githubusercontent.com/53978090/128049365-ee9f800d-aaec-406e-8c98-dd5e04bf67a1.png)
 
 ❌  주의해야하는 점 → delay함수는 suspend함수( 중단하는 함수) 기 때문에 메인스레드에서 단독으로 사용할 수 없고, 위에 나와있듯이 코루틴이나 또 다른 suspend 함수에서 사용해야한다. 
 
@@ -121,7 +121,7 @@ fun main() = runBlocking {
 
 x초 동안 대기해 ! 라고 직접 정해주지 않아도, 코루틴 내부의 일이 끝날때까지 main스레드가 잘 blocking 된다. 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/29348f80-6e78-4eb1-bd03-6d4db8949e31/스크린샷_2021-08-03_23.56.57.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/29348f80-6e78-4eb1-bd03-6d4db8949e31/스크린샷_2021-08-03_23.56.57.png)
+![image](https://user-images.githubusercontent.com/53978090/128049387-0800960c-398a-4d88-966a-25c4cfb9e662.png)
 
 > **structured concurrency**
 
@@ -162,16 +162,15 @@ fun main() = runBlocking { //#1 부모코루틴
 
 world를 찍는 부분을 따로 함수로 빼서 호출해보자 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/144f45fc-7ec7-4cc7-b617-5a77f5fb817b/스크린샷_2021-08-04_00.25.21.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/144f45fc-7ec7-4cc7-b617-5a77f5fb817b/스크린샷_2021-08-04_00.25.21.png)
+![image](https://user-images.githubusercontent.com/53978090/128049409-6c6bc7f4-b723-4856-adce-e35ad665107c.png)
 
  아까 떴던 오류가 뜬다 ㅠ printWorld는 일반 함수라서 suspend 키워드를 붙여주어 일시중지가 될 수 있다는 함수라는것을 알려줘야한다. 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1c8fe87e-02af-4174-b56a-c3b2f1b489a2/스크린샷_2021-08-04_00.26.36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1c8fe87e-02af-4174-b56a-c3b2f1b489a2/스크린샷_2021-08-04_00.26.36.png)
+![image](https://user-images.githubusercontent.com/53978090/128049421-e69a5f7e-aa88-4ef5-bfaf-46d0e3cda86c.png)
 
 오류가 사라진 모습을 볼 수 있다. ㅎㅎ 
 
  
-
 > **Coroutines ARE light-weight**
 
 ```kotlin
