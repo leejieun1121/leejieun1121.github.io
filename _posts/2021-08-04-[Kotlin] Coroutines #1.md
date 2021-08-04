@@ -191,6 +191,6 @@ fun main() = runBlocking { //#1 부모코루틴
 
 **참고**
 
-[https://kotlinlang.org/docs/coroutines-basics.html]
+<https://kotlinlang.org/docs/coroutines-basics.html>
 
-[https://www.youtube.com/watch?v=14AGUuh8Bp8&list=PLbJr8hAHHCP5N6Lsot8SAnC28SoxwAU5A&index=2]
+<https://www.youtube.com/watch?v=14AGUuh8Bp8&list=PLbJr8hAHHCP5N6Lsot8SAnC28SoxwAU5A&index=2>
