@@ -444,4 +444,4 @@ resource를 변수에 저장하고, finally블록을 통해 자원의 해제를 
 
 [https://kotlinlang.org/docs/cancellation-and-timeouts.html#asynchronous-timeout-and-resources]
 
-[[https://www.youtube.com/watch?v=14AGUuh8Bp8&list=PLbJr8hAHHCP5N6Lsot8SAnC28SoxwAU5A&index](https://www.youtube.com/watch?v=14AGUuh8Bp8&list=PLbJr8hAHHCP5N6Lsot8SAnC28SoxwAU5A&index=3]
+[https://www.youtube.com/watch?v=14AGUuh8Bp8&list=PLbJr8hAHHCP5N6Lsot8SAnC28SoxwAU5A&index=3]
