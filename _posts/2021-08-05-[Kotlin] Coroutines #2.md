@@ -369,10 +369,79 @@ fun main() = runBlocking {
 
 앱이 죽지 않고 결과 null을 출력하는것을 볼 수 있다!  
 
+> Asynchronous timeout and resources
+
+withTimeout을 사용했을때, timeout이벤트는 해당 block내부에서 비동기식으로 처리된다. 하지만 다음과 같은 코드는 resource가 해제되기 전에도 실행될 가능성이 있다. 
+
+```kotlin
+import kotlinx.coroutines.*
+
+var acquired = 0 //resource
+
+class Resource {
+    init { acquired++ } //획득
+    fun close() { acquired-- } //해제
+}
+
+fun main() {
+    runBlocking {
+        repeat(100_000) { // 코루틴 10만개 실행
+            launch {
+                val resource = withTimeout(60) { // 60ms 지연 
+                    delay(50)//50 ms 지연 
+                    Resource() //획득 
+                }
+                resource.close()//해제 
+            }
+        }
+    }
+    //코루틴 완료
+    println(acquired) // 획득한 리소스의 개수 출력
+}
+```
+
+내 컴퓨터에서는 계속 0이 나오는데, 원래는 0에서 repeat안의 숫자 범위의 랜덤한 수가 나오므로 리소스 해제가 제대로 이루어지지 않는다고 볼 수 있다. (성능에 따라 다르다고 한다.) 
+
+→ 이를 해결하기 위해 리소스에 대한 참조를 변수에 저장한다.
+
+```kotlin
+import kotlinx.coroutines.*
+
+var acquired = 0 //resource
+
+class Resource {
+    init { acquired++ } //획득
+    fun close() { acquired-- } //해제
+}
+
+fun main() {
+    runBlocking {
+        repeat(100_000) { // 코루틴 10만개 실행
+            launch {
+                var resource: Resource? = null 
+                try {
+                    withTimeout(60) { // 60 ms 지연
+                        delay(50) // 50 ms 지연 
+                        resource = Resource() // 리소스 획득 -> 변수에 저장
+                    }
+                    // 획득한 리소스로 다른 작업 가능
+                } finally {
+                    resource?.close() // 획득했던 리소스 해제
+                }
+            }
+        }
+    }
+    //코루틴 완료
+    println(acquired) // 획득한 리소스의 개수 출력 
+}
+```
+
+resource를 변수에 저장하고, finally블록을 통해 자원의 해제를 보장받기 때문에 획득한 리소스의 개수는 항상 0이 나오고 자원 해제가 잘 이뤄진다는것을 알 수 있다.
+
 ---
 
 **참고**
 
-[[https://kotlinlang.org/docs/coroutines-basics.html](https://kotlinlang.org/docs/coroutines-basics.html)]
+[https://kotlinlang.org/docs/cancellation-and-timeouts.html#asynchronous-timeout-and-resources]
 
-[[https://www.youtube.com/watch?v=14AGUuh8Bp8&list=PLbJr8hAHHCP5N6Lsot8SAnC28SoxwAU5A&index](https://www.youtube.com/watch?v=14AGUuh8Bp8&list=PLbJr8hAHHCP5N6Lsot8SAnC28SoxwAU5A&index=2)=3]
+[[https://www.youtube.com/watch?v=14AGUuh8Bp8&list=PLbJr8hAHHCP5N6Lsot8SAnC28SoxwAU5A&index](https://www.youtube.com/watch?v=14AGUuh8Bp8&list=PLbJr8hAHHCP5N6Lsot8SAnC28SoxwAU5A&index=3]
